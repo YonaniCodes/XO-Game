@@ -1,0 +1,29 @@
+.game-board {
+  background-color: rgb(61, 168, 168);
+
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 11rem auto;
+}
+.box {
+  font-size: 80px;
+  font-weight: bolder;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #7d948b;
+}
+.left {
+  border-left: none;
+}
+.right {
+  border-right: none;
+}
+.top {
+  border-top: none;
+}
+.bottom {
+  border-bottom: none;
+}
