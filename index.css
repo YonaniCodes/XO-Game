@@ -1,10 +1,37 @@
-.game-board {
-  background-color: rgb(61, 168, 168);
+* {
+  box-sizing: border-box;
+}
 
+.game-board {
+  background-color: var(--tertiary-color);
   width: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 11rem auto;
+  margin: 3rem auto;
+  position: relative;
+}
+.players {
+  width: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+.vs {
+  font-size: 50px;
+}
+.players .X,
+.O {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border: 4px solid #7d948b;
+  font-size: 80px;
+  margin: 4px;
+}
+.players .X {
+  color: var(--secondary-color);
 }
 .box {
   font-size: 80px;
@@ -14,6 +41,9 @@
   justify-content: center;
   align-items: center;
   border: 4px solid #7d948b;
+}
+.box:hover {
+  background-color: beige;
 }
 .left {
   border-left: none;
@@ -26,4 +56,46 @@
 }
 .bottom {
   border-bottom: none;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+
+  height: 100%;
+  width: 100%;
+}
+.win-notification {
+  background-color: var(--primary-color);
+}
+.player {
+  font-size: 100px;
+  margin: 0;
+}
+.player .X {
+  color: var(--secondary-color);
+}
+.player .O {
+  color: var(--tertiary-color);
+  border: none;
+}
+.win-notification h1 {
+  margin: 0;
+  color: var(--secondary-color);
+  text-align: center;
+}
+.restart {
+  padding-top: 0.4rem;
+  height: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--primary-color);
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.restart:hover {
+  background-color: beige;
 }

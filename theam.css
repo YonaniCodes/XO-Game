@@ -1,0 +1,7 @@
+* {
+  --primary-color: rgb(61, 168, 168);
+  --secondary-color: rgb(88, 70, 70);
+  --quaternary-color: rgb(149, 3, 247);
+  --tertiary-color: white;
+  --box-border: 4px solid #7d948b;
+}
