@@ -99,7 +99,7 @@ function checkForWin() {
   }
   if (Moves[0] === Moves[3] && Moves[3] === Moves[6] && Moves[0] != undefined) {
     celebrateWin(0, 3, 6);
-    removeEventHandler(".box", makeMove);
+
     winner = isItTurnOfX ? "X" : "O";
     setTimeout(() => renderMatchWinner(true), 500);
 
