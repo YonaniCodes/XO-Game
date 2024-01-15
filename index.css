@@ -79,6 +79,7 @@
 .player .O {
   color: var(--tertiary-color);
   border: none;
+  font-size: 100px;
 }
 .win-notification h1 {
   margin: 0;
